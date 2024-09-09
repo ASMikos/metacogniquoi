@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu Métacogniquoi ?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <header>
+            
+			<h1>Métacogniquoi ?</h1>
+			<div id="logo-acte"><img src="assets/logo_Acte_ILLSHS.png" height=200></div>
+        </header>
+        
+        <section id="zone-points">
+			<div id="nb-points"></div>
+		</section>
+		
+		<section id="scenario-section">
+            <h2>Scénario</h2>
+            <div id="scenario-card"></div>
+        </section>
+        
+        <section id="group-section">
+            <div id="knowledge-group">
+                <h2>Groupe Connaissances</h2>
+                <div id="knowledge-cards"></div>
+            </div>
+            <div id="strategy-group">
+                <h2>Groupe Stratégies</h2>
+                <div id="strategy-cards"></div>
+            </div>
+        </section>
+        
+        <section id="action-section">
+            <!-- <button id="resolve-button" onClick="resolceScenario()">Résoudre le Scénario</button> -->
+			<button id="draw-button">Nouvelle partie</button>
+            <div id="results"></div>
+        </section>
+		
+		<section id="points-section">
+            <button id="1-button" onClick="add1Point()">+1 point</button> <button id="2-button" onClick="add2Points()">+2 points</button> <button id="3-button" onClick="add3Points()">+3 points</button> <button id="Trophy2" onClick="trophy2()">T2</button> <button id="Trophy3" onClick="trophy3()">T3</button>
+        </section>
+		
+		<section id="trophy-section">
+			<div id='Trophy-1'></div> <div id='Trophy-2'></div> <div id='Trophy-3'></div> <div id='Trophy-End'></div>
+		</section>
+        
+        <footer>
+            <p>Nicolas FRADET - Université Clermont Auvergne - Institut Lettres Langues Sciences Humaines et Sociales - Laboratoire ACTE - 2024</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
